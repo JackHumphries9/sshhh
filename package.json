@@ -1,11 +1,11 @@
 {
-	"name": "sshh",
+	"name": "sshhh",
 	"version": "1.0.0",
 	"description": "",
 	"main": "dist/index.js",
 	"type": "module",
 	"bin": {
-		"sshh": "./dist/index.js"
+		"sshhh": "./dist/index.js"
 	},
 	"scripts": {
 		"build": "npx tsc",
