@@ -22,7 +22,7 @@ const generateSecretKey = async (length: number, type: BufferEncoding) => {
 };
 
 program
-	.version("1.0.0")
+	.version("1.0.2")
 	.description("An example command line tool to generate random secret keys")
 	.option("-b, --length <length>", "length of the secret key", "256")
 	.option(

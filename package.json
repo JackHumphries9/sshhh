@@ -1,7 +1,7 @@
 {
 	"name": "sshhh",
-	"version": "1.0.1",
-	"description": "",
+	"version": "1.0.2",
+	"description": "A simple CLI tool for generating random secrets",
 	"main": "dist/index.js",
 	"type": "module",
 	"bin": {
