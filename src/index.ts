@@ -26,7 +26,7 @@ program
 	.version(PKG_VERSION)
 	.description(PKG_DESCRIPTION)
 
-	.option("-b, --length <length>", "length of the secret key", "256")
+	.option("-l, --length <length>", "length of the secret key", "256")
 	.option(
 		"-t, --type <type>",
 		"type of the secret key (base64, hex, base64url)",
@@ -41,6 +41,10 @@ async function main() {
 
 	if (isNaN(length)) {
 		error("Length must be a number");
+	}
+
+	if (length < 4) {
+		error("Length must be greater than 4");
 	}
 
 	if (length < 128) {
