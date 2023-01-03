@@ -18,9 +18,16 @@
 	"files": [
 		"dist"
 	],
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"keywords": [
+		"cli",
+		"secret",
+		"command",
+		"generator",
+		"crypto",
+		"random"
+	],
+	"author": "Jack Humphries",
+	"license": "GNU General Public License v3.0",
 	"dependencies": {
 		"chalk": "^5.2.0",
 		"commander": "^9.4.1"
