@@ -1,15 +1,19 @@
 {
 	"name": "sshhh",
 	"version": "1.0.2",
-	"description": "A simple CLI tool for generating random secrets",
+	"description": "A command line tool to generate random secret keys",
 	"main": "dist/index.js",
 	"type": "module",
 	"bin": {
 		"sshhh": "./dist/index.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JackHumphries9/sshhh.git"
+	},
 	"scripts": {
-		"build": "npx tsc",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"prebuild": "node -p \"'export const PKG_VERSION = ' + JSON.stringify(require('./package.json').version) + ';export const PKG_DESCRIPTION = ' + JSON.stringify(require('./package.json').description) + ';'\" > src/version.ts",
+		"build": "npx tsc"
 	},
 	"files": [
 		"dist"

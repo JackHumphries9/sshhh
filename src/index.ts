@@ -3,6 +3,7 @@
 import { Command } from "commander";
 import chalk from "chalk";
 import crypto from "crypto";
+import { PKG_DESCRIPTION, PKG_VERSION } from "./version.js";
 
 const program = new Command();
 
@@ -22,8 +23,9 @@ const generateSecretKey = async (length: number, type: BufferEncoding) => {
 };
 
 program
-	.version("1.0.2")
-	.description("An example command line tool to generate random secret keys")
+	.version(PKG_VERSION)
+	.description(PKG_DESCRIPTION)
+
 	.option("-b, --length <length>", "length of the secret key", "256")
 	.option(
 		"-t, --type <type>",
