@@ -26,7 +26,11 @@ program
 	.version(PKG_VERSION)
 	.description(PKG_DESCRIPTION)
 
-	.option("-l, --length <length>", "length of the secret key", "256")
+	.option(
+		"-l, --length <length>",
+		"length of the secret key (between 4 and 268435456)",
+		"256"
+	)
 	.option(
 		"-t, --type <type>",
 		"type of the secret key (base64, hex, base64url)",
@@ -45,6 +49,10 @@ async function main() {
 
 	if (length < 4) {
 		error("Length must be greater than 4");
+	}
+
+	if (length > 268435456) {
+		error("Length must be less than 268435456");
 	}
 
 	if (length < 128) {

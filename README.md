@@ -30,7 +30,7 @@
 
 ## About The Project
 
-I've had a need for quickly creating secrets for various use cases, sor creating a secret for a new API key. I've always used online tools or NodeJS, but I wanted a simple command line tool that I could use to create secrets for any use case.
+I've had a need for quickly creating secrets for various use cases, for example, creating a secret for a new API key or a JWT secret. I've always used online tools or NodeJS, but I wanted a simple command line tool that I could use to create secrets for any use case.
 
 (Icon by [Freepik](https://www.flaticon.com/free-icons/secret))
 
@@ -62,7 +62,7 @@ sshhh
 
 By default, the command will generate a 256 byte secret encoded in Base64. You can change the length of the secret with the `-l` or `--length` flag. You can also change the encoding with the `-t` or `--type` flag.
 
-The `-l` or `--length` flag accepts a number larger than 0.
+The `-l` or `--length` flag accepts a number between 4 and 268,435,456 (this is due to the maximum string possible in JavaScript).
 
 The `-t` or `--type` flag accepts the following values: `base64`, `hex`, `base64url`.
 
