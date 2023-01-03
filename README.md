@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/JackHumphries9/Socially">
+  <a href="https://github.com/JackHumphries9/sshhh">
     <img src="./sshhh_icon.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -80,13 +80,13 @@ sshhh --help
 
 ## Releases
 
-See the [releases](https://github.com/JackHumphries9/Socially/releases/) page for all releases and to download the binaries.
+See the [releases](https://github.com/JackHumphries9/sshhh/releases/) page for all releases and to download the binaries.
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues](https://github.com/JackHumphries9/Socially/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/JackHumphries9/sshhh/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
