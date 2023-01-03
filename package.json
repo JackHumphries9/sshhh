@@ -1,6 +1,6 @@
 {
 	"name": "sshhh",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A command line tool to generate random secret keys",
 	"main": "dist/index.js",
 	"type": "module",
