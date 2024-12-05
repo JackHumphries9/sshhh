@@ -66,6 +66,13 @@ The `-l` or `--length` flag accepts a number between 4 and 268,435,456 (this is 
 
 The `-t` or `--type` flag accepts the following values: `base64`, `hex`, `base64url`.
 
+The `-c` or `--clipboard` flag copies the key to your system's clipboard.
+
+The `-ch` or `--clipboard_hide` flag copies the key to your system's clipboard and hides the key.
+
+The `-std` or `--std` flag removes all unneccessary logs. Useful for piping.
+
+
 Example: For a 512 byte secret encoded in hex:
 
 ```sh
@@ -109,5 +116,3 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE` for
 Jack Humphries - me@jackhumphries.io
 
 Project Link: [https://github.com/JackHumphries9/sshhh](https://github.com/JackHumphries9/sshhh)
-
-<!-- Website Link: [https://getsocially.app](https://getsocially.app) -->
